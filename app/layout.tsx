@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google"; // Usamos la fuente del HTML original
 import "./globals.css";
 import Header from "../components/layout/Header"; // Asegúrate que el alias @ apunte a src
+import Footer from "@/components/layout/Footer";
 
 // Configuramos la fuente Space Grotesk para optimizar el CLS (Cumulative Layout Shift)
 const spaceGrotesk = Space_Grotesk({
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Header />
 
         <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );
