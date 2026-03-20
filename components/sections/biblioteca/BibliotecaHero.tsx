@@ -10,8 +10,10 @@ export default function BibliotecaHero() {
           className="w-full h-full object-cover opacity-30 grayscale group-hover:grayscale-0 transition-all duration-700"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWvlducIOP7hJmzwm-ACXdPHw6GWcXRCYORKd4qzrgO_YK4W5kCg1uzOZPLtNTHGnk0H7HjmfVsZPYw1xxLUSF8nwnu1e60N5Rp0ARusnA03ZICyMj9F5K2dPVR8tFBkHfpe_B3PW0kWNze2slqkY8zR0Qgccl-Y2RyuxVNZMPzqP8twWgurFWFzq8TtTfB310fCFqzoxkzhCfmVEQ855RXAoiWmbEVlkiMWUc3fyYkXVIYPX335uYWFJyIzNav-xw3LZwicK6zDmx"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent"></div> */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background-dark via-transparent to-transparent"></div>
       </div>
 
       {/* Content Container */}

@@ -29,7 +29,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
       </head>
-      <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
+      {/* <body className="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display"> */}
+      <body className="bg-background-light dark:bg-background-dark transition-colors duration-300">
         {/* El Header VA AQUÍ ADENTRO para heredar estilos y contexto */}
         <Header />
 
