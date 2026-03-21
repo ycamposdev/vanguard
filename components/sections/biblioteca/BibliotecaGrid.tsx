@@ -1,7 +1,10 @@
 import React from "react";
 import TarjetaVideojuego from "./TarjetaVideojuego";
+import { videojuegoService } from "@/services/game.service";
 
-export default function BibliotecaGrid() {
+export default async function BibliotecaGrid() {
+  const videojuegos = await videojuegoService();
+
   const games = [
     {
       id: 1,
@@ -71,12 +74,12 @@ export default function BibliotecaGrid() {
 
   return (
     <section className="px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">
-      {games.map((game) => (
+      {videojuegos.map((game: any) => (
         <TarjetaVideojuego
           key={game.id}
-          title={game.title}
-          genre={game.genre}
-          image={game.image}
+          title={game.titulo}
+          genre={game.categoria}
+          image={game.imagen}
           isInstalled={game.isInstalled}
         />
       ))}
